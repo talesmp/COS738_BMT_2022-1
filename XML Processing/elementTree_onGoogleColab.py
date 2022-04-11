@@ -32,14 +32,14 @@ def indent(elem, level=0):
             elem.tail = i
 
 # Lendo o arquivo original 'cf79.xml'
-dom = ET.parse(cf79_path)
+etree = ET.parse(cf79_path)
 
 # Criando a estrutura do novo arquivo 'autores.xml'
 root = ET.Element('FILE')
 author = ET.SubElement(root, 'AUTHORS')
 
 # Buscando todos os autores em 'cf79.xml'
-authors = dom.findall('RECORD/AUTHORS/AUTHOR')
+authors = etree.findall('RECORD/AUTHORS/AUTHOR')
 
 # Iterando para gravar os autores (apenas 1 por linha, sem repetição)
 # Sem verificação de duplicidade, 752 linhas; com verificação, 586 linhas
