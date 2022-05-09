@@ -1,0 +1,4 @@
+O arquivo do modelo utilizado "RESULT/MODEL.npy" é um arquivo binário no formato NumPy contendo, respectivamente, os arrays:
+- "all_terms", referente aos 8958 termos válidos;
+- "all_documents", referente aos 1215 documentos válidos,
+- "term_document_matrix", referente à matriz TF-IDF.
